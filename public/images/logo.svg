@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="logo-title logo-description">
+  <title id="logo-title">Rana Shazaib Goods</title>
+  <desc id="logo-description">A refined cargo container and forward route monogram for Rana Shazaib Goods</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102a40"/>
+      <stop offset="100%" stop-color="#071522"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="192" height="192" rx="38" fill="url(#bg)"/>
+  <rect x="5" y="5" width="190" height="190" rx="37" fill="none" stroke="#ffffff" stroke-opacity=".1" stroke-width="2"/>
+  <path d="M40 48h120a10 10 0 0 1 10 10v61H30V58a10 10 0 0 1 10-10Z" fill="#f7fafc"/>
+  <path d="M48 61v44m20-44v44m20-44v44m20-44v44m20-44v44m20-44v44" stroke="#cbd9e5" stroke-width="7" stroke-linecap="round"/>
+  <path d="M30 119h140" stroke="#f59e0b" stroke-width="8"/>
+  <path d="M64 143h56" stroke="#ffffff" stroke-opacity=".72" stroke-width="6" stroke-linecap="round"/>
+  <path d="m110 132 12 11-12 11" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M54 164h92" stroke="#ffffff" stroke-opacity=".24" stroke-width="2" stroke-dasharray="8 10" stroke-linecap="round"/>
+  <circle cx="36" cy="164" r="6" fill="#f59e0b"/>
+  <circle cx="164" cy="164" r="6" fill="#f59e0b"/>
+</svg>

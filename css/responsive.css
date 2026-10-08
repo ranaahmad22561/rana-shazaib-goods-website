@@ -1,0 +1,76 @@
+@media (max-width: 980px) {
+  .nav {
+    position: absolute;
+    top: 84px;
+    left: 16px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 18px 18px;
+    background: rgba(12, 21, 35, 0.98);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+  }
+  .nav.is-open { display: flex; }
+  .mobile-toggle { display: inline-flex; align-items: center; justify-content: center; }
+  .hero__inner, .two-col, .contact-grid, .footer__inner {
+    grid-template-columns: 1fr;
+  }
+  .reviews-panel { grid-template-columns: 1fr; }
+  .quick-quote__row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .stat-strip__inner { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card-grid, .route-grid, .process-grid, .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .hero__background {
+    width: 100%;
+    opacity: 0.62;
+  }
+  .hero::before {
+    background: linear-gradient(180deg, rgba(7,18,30,0.72), rgba(7,18,30,0.96) 42%, #0a1725 100%);
+  }
+  .site-topbar__inner,
+  .site-header__inner,
+  .footer__bottom-inner {
+    flex-wrap: wrap;
+  }
+  .site-topbar__inner {
+    justify-content: center;
+    padding: 8px 0;
+  }
+  .site-topbar__links,
+  .site-topbar__meta {
+    justify-content: center;
+  }
+  .header-cta { display: none; }
+  .hero__inner { padding-top: 40px; gap: 24px; }
+  .hero__title { font-size: clamp(2.45rem, 11vw, 3.35rem); }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; }
+  .quick-quote {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  .quick-quote__row { grid-template-columns: 1fr; }
+  .quick-quote .btn,
+  .quick-quote__note {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .quick-quote .btn { width: 100%; }
+  .stat-strip__inner, .card-grid, .route-grid, .process-grid, .feature-grid, .form-grid { grid-template-columns: 1fr; }
+  .form-group { margin-bottom: 12px; }
+  .route-map { flex-direction: column; align-items: flex-start; }
+  .map-line { width: 100%; min-height: 2px; }
+  .footer__inner { grid-template-columns: 1fr; }
+  .reviews-panel { padding: 26px 20px; }
+  .reviews-panel .route-cta-row .btn { width: 100%; }
+  .section { padding: 70px 0; }
+  .site-header__inner { min-height: 72px; }
+  .nav { top: 72px; }
+  .site-topbar__meta { gap: 12px; }
+  .site-topbar__meta a { font-size: 0.76rem; }
+}

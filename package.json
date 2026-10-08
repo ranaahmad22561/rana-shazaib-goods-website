@@ -1,0 +1,29 @@
+{
+  "name": "rana-shazaib-goods-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "node scripts/prepare-standalone.mjs",
+    "start": "node .next/standalone/server.js",
+    "lint": "eslint app components lib scripts next.config.mjs eslint.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.1",
+    "globals": "^16.4.0",
+    "typescript-eslint": "^8.71.1",
+    "typescript": "^5.9.3"
+  }
+}

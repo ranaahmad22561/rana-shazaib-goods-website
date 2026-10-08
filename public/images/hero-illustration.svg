@@ -1,0 +1,48 @@
+<svg width="900" height="640" viewBox="0 0 900 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Container truck carrying goods from Karachi</title>
+  <desc id="desc">A blue container truck on a road route from Karachi to Faisalabad, Lahore and Sialkot</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e6f1fb"/>
+      <stop offset="100%" stop-color="#f7fafc"/>
+    </linearGradient>
+    <linearGradient id="container" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2879a5"/>
+      <stop offset="100%" stop-color="#185474"/>
+    </linearGradient>
+    <linearGradient id="cab" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7b442"/>
+      <stop offset="100%" stop-color="#e58a18"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="640" rx="32" fill="url(#bg)"/>
+  <circle cx="742" cy="143" r="91" fill="#dbeafe" opacity=".85"/>
+  <circle cx="145" cy="412" r="76" fill="#dfeaf6"/>
+  <path d="M88 178c72-72 173-94 279-72 83 18 139 59 201 75" fill="none" stroke="#f59e0b" stroke-width="9" stroke-linecap="round" stroke-dasharray="3 22"/>
+  <circle cx="94" cy="174" r="12" fill="#f59e0b"/>
+  <circle cx="571" cy="181" r="12" fill="#f59e0b"/>
+  <g fill="#17374d" font-family="Arial, sans-serif" font-size="25" font-weight="700">
+    <text x="78" y="128">Karachi</text>
+    <text x="594" y="174">Faisalabad · Lahore · Sialkot</text>
+  </g>
+  <path d="M65 493h770" stroke="#b5c7d4" stroke-width="12" stroke-linecap="round"/>
+  <path d="M84 493h734" stroke="#fff" stroke-width="3" stroke-dasharray="30 22" opacity=".9"/>
+  <ellipse cx="441" cy="482" rx="330" ry="29" fill="#17374d" opacity=".12"/>
+  <rect x="105" y="258" width="514" height="188" rx="14" fill="url(#container)"/>
+  <rect x="105" y="258" width="514" height="18" rx="9" fill="#4691b4" opacity=".7"/>
+  <g stroke="#87bad0" stroke-width="6" opacity=".67">
+    <path d="M143 284v144M181 284v144M219 284v144M257 284v144M295 284v144M333 284v144M371 284v144M409 284v144M447 284v144M485 284v144M523 284v144M561 284v144M599 284v144"/>
+  </g>
+  <path d="M619 322h99l83 75v49H619z" fill="url(#cab)"/>
+  <path d="M649 341h59l54 50H649z" fill="#cce5f2"/>
+  <path d="M655 347h48v38h-48z" fill="#6b9cb1" opacity=".55"/>
+  <rect x="619" y="418" width="182" height="20" rx="5" fill="#d77914"/>
+  <path d="M121 445h700" stroke="#17374d" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="263" cy="456" r="43" fill="#102435"/>
+  <circle cx="263" cy="456" r="19" fill="#eaf2f6"/>
+  <circle cx="263" cy="456" r="8" fill="#8aa1af"/>
+  <circle cx="693" cy="456" r="43" fill="#102435"/>
+  <circle cx="693" cy="456" r="19" fill="#eaf2f6"/>
+  <circle cx="693" cy="456" r="8" fill="#8aa1af"/>
+  <rect x="136" y="299" width="450" height="5" rx="2.5" fill="#9bc8dc" opacity=".55"/>
+</svg>

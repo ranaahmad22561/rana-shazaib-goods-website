@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Cargo Quote | Rana Shazaib Goods</title>
+    <meta name="description" content="Request a cargo transport quote from Karachi to Faisalabad, Lahore or Sialkot. Provide your route, goods type and shipment details." />
+    <meta name="theme-color" content="#0c1b2a" />
+    <meta property="og:site_name" content="Rana Shazaib Goods" />
+    <meta property="og:locale" content="en_PK" />
+    <meta property="og:title" content="Request a Cargo Quote | Rana Shazaib Goods" />
+    <meta property="og:description" content="Share your shipment details to request a cargo transport quote from Karachi." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ranashazaibgoods.com/images/social-share.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rana Shazaib Goods cargo transport from Karachi to Faisalabad, Lahore and Sialkot" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Request a Cargo Quote | Rana Shazaib Goods" />
+    <meta name="twitter:description" content="Share your shipment details to request a cargo transport quote from Karachi." />
+    <link rel="canonical" href="https://ranashazaibgoods.com/quote.html" />
+    <meta property="og:url" content="https://ranashazaibgoods.com/quote.html" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/quote.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="site-topbar">
+      <div class="site-topbar__inner">
+        <div class="site-topbar__links">
+          <span>Cargo &amp; Goods Transportation</span>
+          <span>Karachi → Faisalabad | Lahore | Sialkot</span>
+        </div>
+        <div class="site-topbar__meta">
+          <a href="tel:+923267813992" data-phone-link>Phone: <strong data-phone>03267813992</strong></a>
+          <a href="https://wa.me/923267813992" data-whatsapp-link>WhatsApp: <strong data-whatsapp>03267813992</strong></a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./index.html" aria-label="Rana Shazaib Goods home">
+          <img class="brand__logo" src="./images/logo.svg" alt="Rana Shazaib Goods logo" />
+          <span class="brand__text">Rana Shazaib <strong>Goods</strong></span>
+        </a>
+        <nav class="nav" id="main-navigation" aria-label="Main navigation">
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./routes.html">Routes</a>
+          <a href="./how-it-works.html">How It Works</a>
+          <a href="./faqs.html">FAQs</a>
+          <a href="./quote.html" class="is-current" aria-current="page">Get a Quote</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./about.html">About Us</a>
+        </nav>
+        <a class="header-cta" href="https://wa.me/923267813992" data-whatsapp-link target="_blank" rel="noopener noreferrer">Get a Quote</a>
+        <button class="mobile-toggle" type="button" aria-label="Toggle menu" aria-controls="main-navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="page-hero__inner">
+          <div class="page-hero__content">
+            <span class="page-hero__crumb">Get a quote</span>
+            <h1>Request a Cargo Quote</h1>
+            <p>Share your route, contact and cargo details. The form prepares a WhatsApp message for you to review and send.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" style="max-width: 920px;">
+          <form class="quote-panel" id="quote-form">
+            <div class="section-header" style="margin-bottom: 0;">
+              <p class="eyebrow">Shipment enquiry</p>
+              <h2>Tell us about your shipment.</h2>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" type="text" autocomplete="name" placeholder="Enter full name" required />
+              </div>
+              <div class="form-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input id="mobileNumber" type="tel" autocomplete="tel" inputmode="tel" placeholder="03267813992" required />
+              </div>
+              <div class="form-group">
+                <label for="whatsAppNumber">WhatsApp Number</label>
+                <input id="whatsAppNumber" type="tel" autocomplete="tel" inputmode="tel" placeholder="03267813992" />
+              </div>
+              <div class="form-group">
+                <label for="companyName">Company / Business Name</label>
+                <input id="companyName" type="text" placeholder="Optional" />
+              </div>
+              <div class="form-group">
+                <label for="pickupCity">Pickup City</label>
+                <input id="pickupCity" type="text" value="Karachi" autocomplete="address-level2" required />
+              </div>
+              <div class="form-group">
+                <label for="destinationCity">Destination City</label>
+                <select id="destinationCity" required>
+                  <option value="">Select city</option>
+                  <option>Faisalabad</option>
+                  <option>Lahore</option>
+                  <option>Sialkot</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="goodsType">Goods Type</label>
+                <input id="goodsType" type="text" placeholder="General cargo" required />
+              </div>
+              <div class="form-group">
+                <label for="goodsDescription">Goods Description</label>
+                <input id="goodsDescription" type="text" placeholder="Describe the cargo" />
+              </div>
+              <div class="form-group">
+                <label for="weight">Approximate Weight</label>
+                <input id="weight" type="number" min="0.1" step="any" placeholder="e.g. 750" required />
+              </div>
+              <div class="form-group">
+                <label for="weightUnit">Weight Unit</label>
+                <select id="weightUnit">
+                  <option>KG</option>
+                  <option>TON</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="packages">Number of Packages</label>
+                <input id="packages" type="number" min="1" placeholder="1" required />
+              </div>
+              <div class="form-group">
+                <label for="packageType">Package Type</label>
+                <input id="packageType" type="text" placeholder="Carton / crate / pallet" />
+              </div>
+              <div class="form-group">
+                <label for="dimensions">Approximate Dimensions</label>
+                <input id="dimensions" type="text" placeholder="Optional" />
+              </div>
+              <div class="form-group">
+                <label for="pickupDate">Preferred Pickup Date</label>
+                <input id="pickupDate" type="date" />
+              </div>
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="pickupAddress">Pickup Address</label>
+                <textarea id="pickupAddress" autocomplete="street-address" placeholder="Full pickup address" required></textarea>
+              </div>
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="deliveryAddress">Delivery Address</label>
+                <textarea id="deliveryAddress" placeholder="Full delivery address" required></textarea>
+              </div>
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="additionalInformation">Additional Information</label>
+                <textarea id="additionalInformation" placeholder="Optional notes or shipment details"></textarea>
+              </div>
+            </div>
+
+            <label class="inline-checkbox" for="confirmDetails">
+              <input id="confirmDetails" type="checkbox" />
+              <span>I confirm that the shipment information provided is accurate to the best of my knowledge.</span>
+            </label>
+
+            <p class="form-privacy-note">Selecting “Request a Quote” sends your details to WhatsApp to prepare a message draft. The enquiry reaches the business only if you press Send in WhatsApp. Read our <a href="./privacy-policy.html">Privacy Notice</a>.</p>
+            <button class="btn btn--primary" type="submit">Request a Quote</button>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a class="brand" href="./index.html"><img class="brand__logo" src="./images/logo.svg" alt="Rana Shazaib Goods logo" /><span class="brand__text">Rana Shazaib <strong>Goods</strong></span></a>
+          <p style="margin-top: 18px;">Cargo and goods transportation services from Karachi toward Faisalabad, Lahore and Sialkot.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./routes.html">Routes</a></li>
+            <li><a href="./faqs.html">FAQs</a></li>
+            <li><a href="./quote.html">Get a Quote</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Our Routes</h4>
+          <ul>
+            <li><a href="./routes.html">Karachi → Faisalabad</a></li>
+            <li><a href="./routes.html">Karachi → Lahore</a></li>
+            <li><a href="./routes.html">Karachi → Sialkot</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>Phone: <a href="tel:+923267813992" data-phone-link><span data-phone>03267813992</span></a></li>
+            <li>WhatsApp: <a href="https://wa.me/923267813992" data-whatsapp-link target="_blank" rel="noopener noreferrer"><span data-whatsapp>03267813992</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner">
+          <span>© <span data-current-year>2026</span> Rana Shazaib Goods. All Rights Reserved.</span>
+          <div class="footer__bottom-links">
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./terms-conditions.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
