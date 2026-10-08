@@ -7,13 +7,11 @@ import { siteConfig } from '@/lib/site';
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
   { href: '/routes', label: 'Routes' },
-  { href: '/how-it-works', label: 'How It Works' },
   { href: '/faqs', label: 'FAQs' },
-  { href: '/quote', label: 'Get a Quote' },
-  { href: '/contact', label: 'Contact Us' },
-  { href: '/about', label: 'About Us' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export function SiteHeader() {
