@@ -94,16 +94,22 @@ export function QuoteForm() {
     const weight = params.get('weight');
     const packages = params.get('packages');
     const goodsType = params.get('goodsType');
+    const fullName = params.get('fullName');
+    const mobileNumber = params.get('mobileNumber');
+    const pickupCity = params.get('pickupCity');
 
     const form = formRef.current;
     if (!form) return;
 
     const safeDestination = siteConfig.destinations.includes(destination ?? '') ? destination ?? '' : '';
     const prefilledValues: Partial<QuoteFields> = {
+      pickupCity: pickupCity === siteConfig.origin ? pickupCity : siteConfig.origin,
       destinationCity: safeDestination,
       weight: weight ?? '',
       packages: packages ?? '',
       goodsType: goodsType ?? '',
+      fullName: fullName ?? '',
+      mobileNumber: mobileNumber ?? '',
     };
     Object.entries(prefilledValues).forEach(([name, value]) => {
       const field = form.elements.namedItem(name);
