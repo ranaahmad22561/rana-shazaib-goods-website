@@ -35,10 +35,10 @@ const faqItems = [
 const organizationStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  '@id': 'https://ranashazaibgoods.com/#organization',
+  '@id': 'https://rana-shazaib-goods-website.vercel.app/#organization',
   name: siteConfig.businessName,
-  url: 'https://ranashazaibgoods.com/',
-  logo: 'https://ranashazaibgoods.com/images/logo.svg',
+  url: 'https://rana-shazaib-goods-website.vercel.app/',
+  logo: 'https://rana-shazaib-goods-website.vercel.app/images/logo.svg',
   email: siteConfig.email,
   telephone: `+92${siteConfig.phone.replace(/^0/, '')}`,
   areaServed: [siteConfig.origin, ...siteConfig.destinations],
@@ -57,81 +57,94 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationStructuredData) }}
       />
-      <section className="hero">
+      <section className="hero hero--professional">
         <div className="hero__inner">
-          <div className="hero__visual">
-            <img
-              className="hero__background"
-              src="/images/container-truck.jpg"
-              alt="Real container truck carrying freight on a road"
-              fetchPriority="high"
-            />
-            <div className="hero__badge">
-              <span className="badge-icon" aria-hidden="true">↗</span>
-              <div>
-                <strong>From Karachi</strong>
-                <small>Faisalabad · Lahore · Sialkot</small>
-              </div>
-            </div>
-          </div>
-
           <div className="hero__content">
-            <p className="eyebrow">Cargo &amp; goods transportation</p>
+            <p className="eyebrow"><span className="eyebrow__mark" aria-hidden="true"></span> Karachi-origin cargo transport</p>
             <h1 className="hero__title">
-              Cargo &amp; Goods Transport from <span>Karachi</span>
+              Your goods. <span>Our route.</span> Clear transport planning.
             </h1>
-            <p>
-              Send a cargo enquiry for Faisalabad, Lahore or Sialkot. Share your load and delivery details to discuss route availability and request a clear quote.
+            <p className="hero__intro">
+              Arrange goods-transport enquiries from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details and discuss route availability, charges and delivery requirements before confirming.
             </p>
             <div className="hero__actions">
-              <Link className="btn btn--primary" href="/quote">Request a Quote</Link>
-              <a className="btn btn--outline" href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                WhatsApp Us
-              </a>
+              <Link className="btn btn--primary" href="/quote">Request a Transport Quote <span aria-hidden="true">→</span></Link>
+              <a className="btn btn--outline" href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer">Discuss on WhatsApp</a>
+            </div>
+            <div className="hero__proof">
+              <div><span className="hero__proof-icon" aria-hidden="true">01</span><span><strong>Route-first planning</strong><small>Origin and destination made clear</small></span></div>
+              <div><span className="hero__proof-icon" aria-hidden="true">02</span><span><strong>Quote before booking</strong><small>Discuss your shipment details</small></span></div>
             </div>
             <div className="hero__route">
               <span className="route-dot" />
-              <span>Karachi</span>
+              <strong>Karachi</strong>
               <span className="route-line" />
               <span className="route-dot route-dot--end" />
               <span>Faisalabad · Lahore · Sialkot</span>
             </div>
           </div>
 
+          <div className="hero__visual">
+            <img
+              className="hero__background"
+              src="/images/container-truck.jpg"
+              alt="Container truck used for goods transportation"
+              fetchPriority="high"
+              width="1200"
+              height="900"
+            />
+            <div className="hero__image-tag"><span className="hero__image-tag-dot" /> GOODS TRANSPORTATION</div>
+            <div className="hero__badge">
+              <span className="badge-icon" aria-hidden="true">↗</span>
+              <div>
+                <small>ROUTE NETWORK</small>
+                <strong>Karachi to Punjab cities</strong>
+                <span>Faisalabad · Lahore · Sialkot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="quick-quote-section" aria-labelledby="quick-quote-title">
+        <div className="container">
           <form className="quick-quote" action="/quote" method="get" aria-label="Start a cargo quote">
-            <p className="quick-quote__eyebrow">Start your enquiry</p>
-            <h3>Get a cargo quote</h3>
+            <div className="quick-quote__heading">
+              <p className="quick-quote__eyebrow">START YOUR ENQUIRY</p>
+              <h2 id="quick-quote-title">Tell us what needs to move.</h2>
+              <p>Share the basics. Confirm price and availability directly before booking.</p>
+            </div>
             <div className="quick-quote__row">
               <label>
-                Origin
+                <span>Origin</span>
                 <input type="text" defaultValue="Karachi" readOnly aria-label="Origin city, Karachi" />
               </label>
               <label>
-                Destination
-                <select name="destinationCity" required>
-                  <option value="">Select a city</option>
+                <span>Destination</span>
+                <select name="destinationCity" required defaultValue="">
+                  <option value="" disabled>Select a city</option>
                   {siteConfig.destinations.map((city) => (
                     <option key={city} value={city}>{city}</option>
                   ))}
                 </select>
               </label>
               <label>
-                Approx. weight
+                <span>Approx. weight (kg)</span>
                 <input type="number" name="weight" min="1" placeholder="e.g. 750" />
               </label>
               <label>
-                Packages
-                <input type="number" name="packages" min="1" placeholder="Number of packages" />
+                <span>Number of packages</span>
+                <input type="number" name="packages" min="1" placeholder="e.g. 20" />
               </label>
               <label>
-                Goods type
+                <span>Type of goods</span>
                 <input type="text" name="goodsType" placeholder="General goods" />
               </label>
             </div>
-            <button className="btn btn--primary" type="submit">
-              Continue to quote <span aria-hidden="true">→</span>
-            </button>
-            <p className="quick-quote__note">Quotes are based on your shipment details.</p>
+            <div className="quick-quote__submit">
+              <p className="quick-quote__note">Submitting a request does not confirm a booking.</p>
+              <button className="btn btn--primary" type="submit">Continue to quote <span aria-hidden="true">→</span></button>
+            </div>
           </form>
         </div>
       </section>

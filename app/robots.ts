@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://ranashazaibgoods.com/sitemap.xml',
+    sitemap: 'https://rana-shazaib-goods-website.vercel.app/sitemap.xml',
   };
 }
