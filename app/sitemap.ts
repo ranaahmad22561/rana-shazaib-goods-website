@@ -15,7 +15,7 @@ const publicRoutes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return publicRoutes.map((route) => ({
-    url: `https://ranashazaibgoods.com${route}`,
+    url: `https://rana-shazaib-goods-website.vercel.app${route}`,
     changeFrequency: route === '/' ? 'weekly' : 'monthly',
     priority: route === '/' ? 1 : 0.7,
   }));
