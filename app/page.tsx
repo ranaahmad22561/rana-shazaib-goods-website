@@ -119,11 +119,11 @@ export default function HomePage() {
               </label>
               <label>
                 Customer name
-                <input type="text" name="fullName" autoComplete="name" maxLength={100} placeholder="Your full name" />
+                <input type="text" name="fullName" autoComplete="name" maxLength={100} placeholder="Your full name" required />
               </label>
               <label>
                 Phone number
-                <input type="tel" name="mobileNumber" autoComplete="tel" inputMode="tel" maxLength={20} placeholder="Your phone number" />
+                <input type="tel" name="mobileNumber" autoComplete="tel" inputMode="tel" maxLength={20} placeholder="Your phone number" required />
               </label>
               <label>
                 Packages
