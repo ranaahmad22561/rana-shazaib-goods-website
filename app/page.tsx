@@ -84,10 +84,8 @@ export default function HomePage() {
               Send a cargo enquiry for Faisalabad, Lahore or Sialkot. Share your load and delivery details to discuss route availability and request a clear quote.
             </p>
             <div className="hero__actions">
-              <Link className="btn btn--primary" href="/quote">Request a Quote</Link>
-              <a className="btn btn--outline" href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                WhatsApp Us
-              </a>
+              <Link className="btn btn--primary" href="/quote">Get a Cargo Quote</Link>
+              <Link className="btn btn--outline" href="/contact">Contact Us</Link>
             </div>
             <div className="hero__route">
               <span className="route-dot" />
@@ -103,8 +101,8 @@ export default function HomePage() {
             <h3>Get a cargo quote</h3>
             <div className="quick-quote__row">
               <label>
-                Origin
-                <input type="text" defaultValue="Karachi" readOnly aria-label="Origin city, Karachi" />
+                Pickup city
+                <input type="text" name="pickupCity" defaultValue="Karachi" readOnly aria-label="Pickup city, Karachi" />
               </label>
               <label>
                 Destination
@@ -116,8 +114,16 @@ export default function HomePage() {
                 </select>
               </label>
               <label>
-                Approx. weight
+                Goods weight (kg)
                 <input type="number" name="weight" min="1" placeholder="e.g. 750" />
+              </label>
+              <label>
+                Customer name
+                <input type="text" name="fullName" autoComplete="name" maxLength={100} placeholder="Your full name" required />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="mobileNumber" autoComplete="tel" inputMode="tel" maxLength={20} placeholder="Your phone number" required />
               </label>
               <label>
                 Packages
@@ -258,6 +264,34 @@ export default function HomePage() {
               <h3>Fast Quote Request</h3>
               <p>Send your cargo requirement and route information through the WhatsApp enquiry system.</p>
               <Link href="/quote" className="btn btn--primary">Get a Quote</Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="section section--compact" aria-labelledby="why-choose-us-title">
+        <div className="container">
+          <div className="section-header">
+            <p className="eyebrow">Why choose us</p>
+            <h2 id="why-choose-us-title">Cargo planning built around your shipment.</h2>
+            <p>Get the details clear before you commit to a transport arrangement.</p>
+          </div>
+          <div className="feature-grid">
+            <article className="feature-card">
+              <div className="feature-card__icon" aria-hidden="true">↗</div>
+              <h3>Route-focused service</h3>
+              <p>Start with Karachi and the destination you need: Faisalabad, Lahore or Sialkot.</p>
+            </article>
+            <article className="feature-card">
+              <div className="feature-card__icon" aria-hidden="true">✓</div>
+              <h3>Clear quote discussion</h3>
+              <p>Share the weight, goods type and package details so charges can be discussed with the right context.</p>
+            </article>
+            <article className="feature-card">
+              <div className="feature-card__icon" aria-hidden="true">◎</div>
+              <h3>Direct confirmation</h3>
+              <p>Review the route, availability and agreed arrangements directly before the shipment is booked.</p>
             </article>
           </div>
         </div>
