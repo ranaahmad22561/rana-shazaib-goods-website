@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     'Cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to request a clear quote.',
-  metadataBase: new URL('https://ranashazaibgoods.com'),
+  metadataBase: new URL('https://rana-shazaib-goods-website.vercel.app'),
   applicationName: 'Rana Shazaib Goods',
   openGraph: {
     type: 'website',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Rana Shazaib Goods | Cargo Transport from Karachi',
     description:
       'Cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to request a clear quote.',
-    url: 'https://ranashazaibgoods.com/',
+    url: 'https://rana-shazaib-goods-website.vercel.app/',
     images: [
       {
         url: '/images/social-share.jpg',
