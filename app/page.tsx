@@ -57,66 +57,43 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationStructuredData) }}
       />
-      <section className="hero">
+      <section className="hero hero--design-one">
+        <div className="hero__visual">
+          <img
+            className="hero__background"
+            src="/images/container-truck.jpg"
+            alt="Container truck carrying goods along a highway"
+            fetchPriority="high"
+          />
+        </div>
         <div className="hero__inner">
-          <div className="hero__visual">
-            <img
-              className="hero__background"
-              src="/images/container-truck.jpg"
-              alt="Real container truck carrying freight on a road"
-              fetchPriority="high"
-            />
-            <div className="hero__badge">
-              <span className="badge-icon" aria-hidden="true">↗</span>
-              <div>
-                <strong>From Karachi</strong>
-                <small>Faisalabad · Lahore · Sialkot</small>
-              </div>
-            </div>
-          </div>
-
           <div className="hero__content">
-            <p className="eyebrow">Cargo &amp; goods transportation</p>
+            <p className="hero__trust-pill"><span aria-hidden="true">✓</span> Reliable · Safe · On Time</p>
             <h1 className="hero__title">
-              Cargo &amp; Goods Transport from <span>Karachi</span>
+              Goods Transport <span>Services</span>
             </h1>
+            <p className="hero__route-title">From Karachi to Faisalabad, Lahore and Sialkot</p>
             <p>
-              Send a cargo enquiry for Faisalabad, Lahore or Sialkot. Share your load and delivery details to discuss route availability and request a clear quote.
+              Send us your goods type, estimated weight and delivery details to discuss route availability and request a clear transport quote.
             </p>
             <div className="hero__actions">
-              <Link className="btn btn--primary" href="/quote">Get a Cargo Quote</Link>
-              <Link className="btn btn--outline" href="/contact">Contact Us</Link>
+              <Link className="btn btn--primary" href="/quote">Get a Free Quote <span aria-hidden="true">→</span></Link>
+              <Link className="btn btn--outline" href="/services">Explore Services</Link>
             </div>
-            <div className="hero__route">
-              <span className="route-dot" />
+            <div className="hero__route" aria-label="Cargo route from Karachi to Faisalabad, Lahore and Sialkot">
+              <span className="route-dot" aria-hidden="true" />
               <span>Karachi</span>
-              <span className="route-line" />
-              <span className="route-dot route-dot--end" />
+              <span className="route-line" aria-hidden="true" />
+              <span className="route-dot route-dot--end" aria-hidden="true" />
               <span>Faisalabad · Lahore · Sialkot</span>
             </div>
           </div>
 
-          <form className="quick-quote" action="/quote" method="get" aria-label="Start a cargo quote">
+          <form className="quick-quote quick-quote--light" action="/quote" method="get" aria-label="Start a cargo quote">
             <p className="quick-quote__eyebrow">Start your enquiry</p>
-            <h3>Get a cargo quote</h3>
+            <h3>Get a Quick Quote</h3>
+            <p className="quick-quote__intro">Share your shipment details to request a route-specific quote.</p>
             <div className="quick-quote__row">
-              <label>
-                Pickup city
-                <input type="text" name="pickupCity" defaultValue="Karachi" readOnly aria-label="Pickup city, Karachi" />
-              </label>
-              <label>
-                Destination
-                <select name="destinationCity" required>
-                  <option value="">Select a city</option>
-                  {siteConfig.destinations.map((city) => (
-                    <option key={city} value={city}>{city}</option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                Goods weight (kg)
-                <input type="number" name="weight" min="1" placeholder="e.g. 750" />
-              </label>
               <label>
                 Customer name
                 <input type="text" name="fullName" autoComplete="name" maxLength={100} placeholder="Your full name" required />
@@ -126,18 +103,35 @@ export default function HomePage() {
                 <input type="tel" name="mobileNumber" autoComplete="tel" inputMode="tel" maxLength={20} placeholder="Your phone number" required />
               </label>
               <label>
-                Packages
-                <input type="number" name="packages" min="1" placeholder="Number of packages" />
+                From
+                <input type="text" name="pickupCity" defaultValue="Karachi" readOnly aria-label="Pickup city, Karachi" />
+              </label>
+              <label>
+                To
+                <select name="destinationCity" required>
+                  <option value="">Select a city</option>
+                  {siteConfig.destinations.map((city) => (
+                    <option key={city} value={city}>{city}</option>
+                  ))}
+                </select>
               </label>
               <label>
                 Goods type
                 <input type="text" name="goodsType" placeholder="General goods" />
               </label>
+              <label>
+                Weight (kg)
+                <input type="number" name="weight" min="1" placeholder="e.g. 750" />
+              </label>
+              <label className="quick-quote__packages">
+                Number of packages
+                <input type="number" name="packages" min="1" placeholder="Number of packages" />
+              </label>
             </div>
             <button className="btn btn--primary" type="submit">
-              Continue to quote <span aria-hidden="true">→</span>
+              Continue to Quote <span aria-hidden="true">→</span>
             </button>
-            <p className="quick-quote__note">Quotes are based on your shipment details.</p>
+            <p className="quick-quote__note">A quote request does not confirm a booking.</p>
           </form>
         </div>
       </section>
@@ -145,20 +139,20 @@ export default function HomePage() {
       <div className="stat-strip">
         <div className="stat-strip__inner">
           <div className="stat-card">
-            <span className="stat-card__num" aria-hidden="true">01</span>
-            <span className="stat-card__text">Karachi-based origin</span>
+            <span className="stat-card__num" aria-hidden="true">↗</span>
+            <span className="stat-card__text">Clear route details</span>
           </div>
           <div className="stat-card">
-            <span className="stat-card__num" aria-hidden="true">02</span>
-            <span className="stat-card__text">Faisalabad, Lahore &amp; Sialkot</span>
+            <span className="stat-card__num" aria-hidden="true">✓</span>
+            <span className="stat-card__text">Shipment-based quotes</span>
           </div>
           <div className="stat-card">
-            <span className="stat-card__num" aria-hidden="true">03</span>
-            <span className="stat-card__text">General goods movement</span>
+            <span className="stat-card__num" aria-hidden="true">▣</span>
+            <span className="stat-card__text">Different load sizes</span>
           </div>
           <div className="stat-card">
-            <span className="stat-card__num" aria-hidden="true">04</span>
-            <span className="stat-card__text">Straightforward quoting</span>
+            <span className="stat-card__num" aria-hidden="true">→</span>
+            <span className="stat-card__text">Direct confirmation</span>
           </div>
         </div>
       </div>
@@ -225,8 +219,9 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="section-header">
-            <p className="eyebrow">Services</p>
-            <h2>Start with the route and the kind of load.</h2>
+            <p className="eyebrow">Our services</p>
+            <h2>Reliable Transport Solutions</h2>
+            <p>Goods transport support for business shipments, container cargo and intercity routes.</p>
           </div>
           <div className="card-grid">
             <article className="service-card">
