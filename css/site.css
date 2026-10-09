@@ -1400,9 +1400,9 @@ ul { color: var(--ink-soft); }
   .hero--design-one .hero__visual {
     position: relative;
     inset: auto;
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
+    grid-column: auto;
+    grid-row: auto;
+    width: var(--container);
     height: auto;
     aspect-ratio: 1.55;
     margin: 18px auto 0;
