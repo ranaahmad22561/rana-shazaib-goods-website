@@ -1038,3 +1038,94 @@ ul { color: var(--ink-soft); }
   .footer__inner { grid-template-columns: minmax(0,1fr); }
   .footer__inner > div:first-child { grid-column: auto; }
 }
+
+
+/* Design 1 refinement: premium cargo layout with responsive behavior.
+   Existing routes, copy, forms and desktop structure remain unchanged. */
+.hero__background {
+  background: #eaf5fb;
+}
+.hero__visual {
+  min-width: 0;
+}
+.hero__badge {
+  max-width: calc(100% - 24px);
+}
+.quick-quote input,
+.quick-quote select {
+  min-width: 0;
+}
+.quick-quote input:focus-visible,
+.quick-quote select:focus-visible {
+  outline-color: #7dd3fc;
+  outline-offset: 2px;
+}
+.service-card .btn,
+.route-card .btn {
+  margin-top: 8px;
+}
+.service-card:hover,
+.route-card:hover,
+.feature-card:hover,
+.process-card:hover {
+  border-color: #a8dff8;
+  box-shadow: 0 14px 32px rgba(18, 59, 101, .09);
+}
+@media (min-width: 761px) {
+  .hero__visual { align-self: center; }
+  .hero__background { aspect-ratio: 1.28; }
+}
+@media (max-width: 760px) {
+  .hero__inner {
+    width: var(--container);
+    padding-top: 18px;
+  }
+  .hero__visual { padding-bottom: 17px; }
+  .hero__background {
+    aspect-ratio: 1.42;
+    object-position: center;
+  }
+  .hero__badge {
+    right: 10px;
+    left: 10px;
+    max-width: none;
+  }
+  .hero__route {
+    align-items: center;
+    row-gap: 7px;
+  }
+  .quick-quote {
+    width: 100%;
+    min-width: 0;
+  }
+  .quick-quote__row,
+  .quick-quote__row label {
+    min-width: 0;
+  }
+  .stat-card { min-width: 0; }
+  .stat-card__text { overflow-wrap: anywhere; }
+  .service-card .btn,
+  .route-card .btn { width: 100%; }
+  .nav.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: #fff;
+  }
+}
+@media (max-width: 380px) {
+  .hero__background { aspect-ratio: 1.18; }
+  .hero__badge small { overflow-wrap: anywhere; }
+  .quick-quote { padding-right: 14px; padding-left: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
