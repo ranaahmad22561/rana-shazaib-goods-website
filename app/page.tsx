@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site';
+import { PromoVideo } from '@/components/promo-video';
 
 export const metadata: Metadata = {
   title: 'Cargo Transport from Karachi | Rana Shahzaib Goods',
@@ -234,7 +235,38 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-<section className="section">
+
+      <section className="section promo-film" aria-labelledby="promo-film-title">
+              <div className="container promo-film__stack">
+                <div className="promo-film__heading">
+                  <p className="eyebrow">Cargo in motion</p>
+                  <h2 id="promo-film-title">Careful Loading. Smart Transport. Reliable Delivery.</h2>
+                </div>
+                <PromoVideo />
+                <div className="promo-film__below">
+                  <p>
+                    Every shipment deserves careful handling and a clear plan. This one-minute cargo reel brings together illustrative footage of loading, container handling, unloading and transport—similar to the services customers can enquire about through Rana Shahzaib Goods.
+                  </p>
+                  <div className="promo-film__points">
+                    <div className="promo-film__point">
+                      <span aria-hidden="true">✓</span>
+                      <div><strong>Careful cargo handling</strong><small>Organized loading and secure preparation.</small></div>
+                    </div>
+                    <div className="promo-film__point">
+                      <span aria-hidden="true">↗</span>
+                      <div><strong>Planned route movement</strong><small>Route and shipment details discussed before booking.</small></div>
+                    </div>
+                    <div className="promo-film__point">
+                      <span aria-hidden="true">▣</span>
+                      <div><strong>Business-focused service</strong><small>Transport support for different goods and load sizes.</small></div>
+                    </div>
+                  </div>
+                  <Link className="btn btn--primary" href="/quote">Request a Cargo Quote <span aria-hidden="true">→</span></Link>
+                </div>
+              </div>
+            </section>
+
+      <section className="section">
         <div className="container two-col">
           <div>
             <p className="eyebrow">Who we are</p>
