@@ -1,5 +1,5 @@
 window.RSG_CONFIG = {
-  businessName: 'Rana Shazaib Goods',
+  businessName: 'Rana Shahzaib Goods',
   phone: '03267813992',
   whatsapp: '923267813992',
   email: 'ahmadali22561@gmail.com',
