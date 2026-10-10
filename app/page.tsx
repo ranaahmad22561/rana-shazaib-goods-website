@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site';
+import { PromoVideo } from '@/components/promo-video';
 
 export const metadata: Metadata = {
   title: 'Cargo Transport from Karachi | Rana Shahzaib Goods',
@@ -271,13 +272,16 @@ export default function HomePage() {
 
 
       
-      <section className="section promo-film" aria-labelledby="promo-film-title">
-        <div className="container promo-film__layout">
-          <div className="promo-film__content">
+            <section className="section promo-film" aria-labelledby="promo-film-title">
+        <div className="container promo-film__stack">
+          <div className="promo-film__heading">
             <p className="eyebrow">Cargo in motion</p>
             <h2 id="promo-film-title">Careful Loading. Smart Transport. Reliable Delivery.</h2>
+          </div>
+          <PromoVideo />
+          <div className="promo-film__below">
             <p>
-              Every shipment deserves careful handling and a clear plan. See how organized loading and modern cargo movement help goods travel from Karachi towards their destination.
+              Every shipment deserves careful handling and a clear plan. This one-minute cargo reel brings together illustrative footage of loading, container handling, unloading and transport—similar to the services customers can enquire about through Rana Shahzaib Goods.
             </p>
             <div className="promo-film__points">
               <div className="promo-film__point">
@@ -294,33 +298,6 @@ export default function HomePage() {
               </div>
             </div>
             <Link className="btn btn--primary" href="/quote">Request a Cargo Quote <span aria-hidden="true">→</span></Link>
-          </div>
-          <div className="promo-film__media">
-            <div className="promo-film__media-top">
-              <span className="promo-film__live-dot" aria-hidden="true"></span>
-              <span>Rana Shahzaib Goods · Cargo in Motion</span>
-            </div>
-            <video
-              className="promo-film__video"
-              controls
-              playsInline
-              preload="metadata"
-              poster="/images/container-truck.jpg"
-              aria-label="Illustrative video of freight goods being loaded onto a truck using a forklift"
-            >
-              <source
-                src="https://videos.pexels.com/video-files/9856371/9856371-hd_1920_1080_30fps.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support embedded video.
-              <a href="https://www.pexels.com/video/loading-a-truck-with-construction-products-9856371/" target="_blank" rel="noreferrer">Open the cargo-loading video</a>.
-            </video>
-            <div className="promo-film__media-caption">
-              <span>LOADING</span><span>TRANSPORT</span><span>DELIVERY PLANNING</span>
-            </div>
-            <p className="promo-film__credit">
-              Illustrative stock footage by <a href="https://www.pexels.com/video/loading-a-truck-with-construction-products-9856371/" target="_blank" rel="noreferrer">Amar Preciado on Pexels</a>.
-            </p>
           </div>
         </div>
       </section>
