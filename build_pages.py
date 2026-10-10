@@ -11,7 +11,7 @@ common = '''<!DOCTYPE html>
     <meta name="description" content="{description}" />
     <meta name="theme-color" content="#0c1b2a" />
     {robots}
-    <meta property="og:site_name" content="Rana Shazaib Goods" />
+    <meta property="og:site_name" content="Rana Shahzaib Goods" />
     <meta property="og:locale" content="en_PK" />
     <meta property="og:title" content="{og_title}" />
     <meta property="og:description" content="{og_desc}" />
@@ -19,7 +19,7 @@ common = '''<!DOCTYPE html>
     <meta property="og:image" content="https://ranashazaibgoods.com/images/social-share.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Rana Shazaib Goods cargo transport from Karachi to Faisalabad, Lahore and Sialkot" />
+    <meta property="og:image:alt" content="Rana Shahzaib Goods cargo transport from Karachi to Faisalabad, Lahore and Sialkot" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{og_title}" />
     <meta name="twitter:description" content="{og_desc}" />
@@ -33,7 +33,7 @@ common = '''<!DOCTYPE html>
         "@context": "https://schema.org",
         "@type": "Organization",
         "@id": "https://ranashazaibgoods.com/#organization",
-        "name": "Rana Shazaib Goods",
+        "name": "Rana Shahzaib Goods",
         "url": "https://ranashazaibgoods.com/",
         "logo": "https://ranashazaibgoods.com/images/logo.svg",
         "email": "ahmadali22561@gmail.com",
@@ -66,9 +66,9 @@ common = '''<!DOCTYPE html>
 
     <header class="site-header">
       <div class="site-header__inner">
-        <a class="brand" href="./index.html" aria-label="Rana Shazaib Goods home">
-          <img class="brand__logo" src="./images/logo.svg" alt="Rana Shazaib Goods logo" />
-          <span class="brand__text">Rana Shazaib <strong>Goods</strong></span>
+        <a class="brand" href="./index.html" aria-label="Rana Shahzaib Goods home">
+          <img class="brand__logo" src="./images/logo.svg" alt="Rana Shahzaib Goods logo" />
+          <span class="brand__text">Rana Shahzaib <strong>Goods</strong></span>
         </a>
 
         <nav class="nav" id="main-navigation" aria-label="Main navigation">
@@ -92,9 +92,9 @@ common = '''<!DOCTYPE html>
     <footer class="footer">
       <div class="footer__inner">
         <div>
-          <a class="brand" href="./index.html" aria-label="Rana Shazaib Goods home">
-            <img class="brand__logo" src="./images/logo.svg" alt="Rana Shazaib Goods logo" />
-            <span class="brand__text">Rana Shazaib <strong>Goods</strong></span>
+          <a class="brand" href="./index.html" aria-label="Rana Shahzaib Goods home">
+            <img class="brand__logo" src="./images/logo.svg" alt="Rana Shahzaib Goods logo" />
+            <span class="brand__text">Rana Shahzaib <strong>Goods</strong></span>
           </a>
           <p style="margin-top: 18px;">Cargo and goods transportation services from Karachi toward Faisalabad, Lahore and Sialkot.</p>
         </div>
@@ -129,7 +129,7 @@ common = '''<!DOCTYPE html>
 
       <div class="footer__bottom">
         <div class="footer__bottom-inner">
-          <span>© <span data-current-year>2026</span> Rana Shazaib Goods. All Rights Reserved.</span>
+          <span>© <span data-current-year>2026</span> Rana Shahzaib Goods. All Rights Reserved.</span>
           <div class="footer__bottom-links">
             <a href="./privacy-policy.html">Privacy Policy</a>
             <a href="./terms-conditions.html">Terms &amp; Conditions</a>
@@ -143,9 +143,9 @@ common = '''<!DOCTYPE html>
 
 pages = {
     'index.html': {
-        'title': 'Cargo Transport from Karachi | Rana Shazaib Goods',
+        'title': 'Cargo Transport from Karachi | Rana Shahzaib Goods',
         'description': 'Arrange cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to discuss availability and request a clear quote.',
-        'og_title': 'Cargo Transport from Karachi | Rana Shazaib Goods',
+        'og_title': 'Cargo Transport from Karachi | Rana Shahzaib Goods',
         'og_desc': 'Cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to request a quote.',
         'robots': '',
         'extra_head': '',
@@ -162,7 +162,7 @@ pages = {
           <div class="hero__content">
             <p class="eyebrow hero__subtitle">Reliable logistics</p>
             <h1 class="hero__title">Cargo &amp; Goods Transport from <span>Karachi</span></h1>
-            <p>Rana Shazaib Goods arranges cargo transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to discuss availability and request a clear quote.</p>
+            <p>Rana Shahzaib Goods arranges cargo transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to discuss availability and request a clear quote.</p>
             <div class="hero__actions">
               <a class="btn btn--primary" href="./quote.html">Get a Quote <span aria-hidden="true">→</span></a>
               <a class="btn btn--outline" href="https://wa.me/923267813992" data-whatsapp-link target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
@@ -235,7 +235,7 @@ pages = {
           <div>
             <p class="eyebrow">About us</p>
             <h2>Professional cargo support for goods moving from Karachi.</h2>
-            <p>Rana Shazaib Goods provides cargo and goods transportation services from Karachi toward Faisalabad, Lahore and Sialkot. We support customers who need a practical and straightforward way to move general goods in a professional, organised manner.</p>
+            <p>Rana Shahzaib Goods provides cargo and goods transportation services from Karachi toward Faisalabad, Lahore and Sialkot. We support customers who need a practical and straightforward way to move general goods in a professional, organised manner.</p>
             <p>Our approach is built around clear communication, straightforward enquiry handling, and transport arrangements based on the actual route and cargo requirements. Every shipment enquiry begins with the details needed to review the request and discuss a quote.</p>
             <div class="route-cta-row">
               <a class="btn btn--primary" href="./quote.html">Request a Quote</a>
@@ -462,7 +462,7 @@ pages = {
               <div class="faq-item__answer"><div class="faq-item__answer-inner">A name, mobile number, origin and destination, goods type, weight, package count, pickup address, delivery address and any additional details help us review the shipment.</div></div>
             </article>
             <article class="faq-item">
-              <button class="faq-item__question" type="button">How do I contact Rana Shazaib Goods?<span class="faq-item__icon">+</span></button>
+              <button class="faq-item__question" type="button">How do I contact Rana Shahzaib Goods?<span class="faq-item__icon">+</span></button>
               <div class="faq-item__answer"><div class="faq-item__answer-inner">You can contact the business by phone, WhatsApp, email or by using the quote enquiry form on the website.</div></div>
             </article>
           </div>
@@ -505,9 +505,9 @@ pages = {
     </main>''',
     },
     'about.html': {
-        'title': 'About Our Cargo Company | Rana Shazaib Goods',
-        'description': 'Learn about Rana Shazaib Goods and our cargo transport arrangements from Karachi to Faisalabad, Lahore and Sialkot.',
-        'og_title': 'About Our Cargo Company | Rana Shazaib Goods',
+        'title': 'About Our Cargo Company | Rana Shahzaib Goods',
+        'description': 'Learn about Rana Shahzaib Goods and our cargo transport arrangements from Karachi to Faisalabad, Lahore and Sialkot.',
+        'og_title': 'About Our Cargo Company | Rana Shahzaib Goods',
         'og_desc': 'Learn about our cargo and goods transport arrangements from Karachi to Faisalabad, Lahore and Sialkot.',
         'robots': '',
         'extra_head': '',
@@ -524,7 +524,7 @@ pages = {
           <div class="page-hero__content">
             <span class="page-hero__crumb">About us</span>
             <h1>Dedicated cargo support from Karachi.</h1>
-            <p>Rana Shazaib Goods provides a clear and dependable route for moving general goods from Karachi toward Faisalabad, Lahore and Sialkot.</p>
+            <p>Rana Shahzaib Goods provides a clear and dependable route for moving general goods from Karachi toward Faisalabad, Lahore and Sialkot.</p>
           </div>
         </div>
       </section>
@@ -534,7 +534,7 @@ pages = {
           <div>
             <p class="eyebrow">Our business</p>
             <h2>Professional goods transportation built around clear answers.</h2>
-            <p>Rana Shazaib Goods works with customers who need a practical cargo and goods transport solution from Karachi. The focus is on handling cargo requirements professionally, with straightforward communication and a clear quotation process.</p>
+            <p>Rana Shahzaib Goods works with customers who need a practical cargo and goods transport solution from Karachi. The focus is on handling cargo requirements professionally, with straightforward communication and a clear quotation process.</p>
             <p>We support shipments toward Faisalabad, Lahore and Sialkot, helping customers understand the route, cargo type, and enquiry details before moving goods. The business remains centred on realistic movement requirements and responsible transport planning.</p>
           </div>
           <div class="quote-panel">
@@ -578,9 +578,9 @@ pages = {
     </main>''',
     },
     'services.html': {
-        'title': 'Cargo Transport Services | Rana Shazaib Goods',
+        'title': 'Cargo Transport Services | Rana Shahzaib Goods',
         'description': 'Explore goods transport enquiries from Karachi to Faisalabad, Lahore and Sialkot. Request a quote based on your shipment details.',
-        'og_title': 'Cargo Transport Services | Rana Shazaib Goods',
+        'og_title': 'Cargo Transport Services | Rana Shahzaib Goods',
         'og_desc': 'Goods transport enquiries from Karachi to Faisalabad, Lahore and Sialkot.',
         'robots': '',
         'extra_head': '',
@@ -658,7 +658,7 @@ pages = {
     },
     'routes.html': {
         'title': 'Karachi Cargo Routes | Lahore, Faisalabad & Sialkot',
-        'description': 'View cargo routes from Karachi to Faisalabad, Lahore and Sialkot. Contact Rana Shazaib Goods to discuss your destination and shipment.',
+        'description': 'View cargo routes from Karachi to Faisalabad, Lahore and Sialkot. Contact Rana Shahzaib Goods to discuss your destination and shipment.',
         'og_title': 'Karachi Cargo Routes | Lahore, Faisalabad & Sialkot',
         'og_desc': 'Cargo transport routes from Karachi to Faisalabad, Lahore and Sialkot.',
         'robots': '',
@@ -730,10 +730,10 @@ pages = {
     </main>''',
     },
     'contact.html': {
-        'title': 'Contact for Cargo Quotes | Rana Shazaib Goods',
-        'description': 'Contact Rana Shazaib Goods by phone or WhatsApp to discuss cargo transport from Karachi to Faisalabad, Lahore and Sialkot.',
-        'og_title': 'Contact for Cargo Quotes | Rana Shazaib Goods',
-        'og_desc': 'Discuss your shipment and request a cargo quote by contacting Rana Shazaib Goods.',
+        'title': 'Contact for Cargo Quotes | Rana Shahzaib Goods',
+        'description': 'Contact Rana Shahzaib Goods by phone or WhatsApp to discuss cargo transport from Karachi to Faisalabad, Lahore and Sialkot.',
+        'og_title': 'Contact for Cargo Quotes | Rana Shahzaib Goods',
+        'og_desc': 'Discuss your shipment and request a cargo quote by contacting Rana Shahzaib Goods.',
         'robots': '',
         'extra_head': '',
         'home': '',
@@ -748,7 +748,7 @@ pages = {
         <div class="page-hero__inner">
           <div class="page-hero__content">
             <span class="page-hero__crumb">Contact</span>
-            <h1>Talk to Rana Shazaib Goods</h1>
+            <h1>Talk to Rana Shahzaib Goods</h1>
             <p>Request a quote, ask about route availability, or discuss your shipment requirements for Karachi-based cargo and goods transportation.</p>
           </div>
         </div>
@@ -758,7 +758,7 @@ pages = {
         <div class="container contact-grid">
           <div class="contact-panel">
             <p class="eyebrow">Company details</p>
-            <h2>Rana Shazaib Goods</h2>
+            <h2>Rana Shahzaib Goods</h2>
             <p>Cargo &amp; Goods Transportation</p>
             <div class="contact-details">
               <div class="contact-detail">
@@ -793,9 +793,9 @@ pages = {
     </main>''',
     },
     'quote.html': {
-        'title': 'Request a Cargo Quote | Rana Shazaib Goods',
+        'title': 'Request a Cargo Quote | Rana Shahzaib Goods',
         'description': 'Request a cargo transport quote from Karachi to Faisalabad, Lahore or Sialkot. Provide your route, goods type and shipment details.',
-        'og_title': 'Request a Cargo Quote | Rana Shazaib Goods',
+        'og_title': 'Request a Cargo Quote | Rana Shahzaib Goods',
         'og_desc': 'Share your shipment details to request a cargo transport quote from Karachi.',
         'robots': '',
         'extra_head': '<script defer src="./js/quote.js"></script>',
@@ -910,9 +910,9 @@ pages = {
     </main>''',
     },
     'faqs.html': {
-        'title': 'Cargo Transport FAQs | Rana Shazaib Goods',
+        'title': 'Cargo Transport FAQs | Rana Shahzaib Goods',
         'description': 'Answers to common questions about cargo transport enquiries from Karachi, routes, quotes, shipment details and bookings.',
-        'og_title': 'Cargo Transport FAQs | Rana Shazaib Goods',
+        'og_title': 'Cargo Transport FAQs | Rana Shahzaib Goods',
         'og_desc': 'Find answers about Karachi cargo routes, requesting a quote, shipment details and confirming a transport booking.',
         'robots': '',
         'extra_head': '',
@@ -972,7 +972,7 @@ pages = {
               <div class="faq-item__answer"><div class="faq-item__answer-inner">Pickup, delivery, timing and availability depend on the shipment and must be discussed and confirmed directly with the business before booking.</div></div>
             </article>
             <article class="faq-item">
-              <button class="faq-item__question" type="button">How can I contact Rana Shazaib Goods?<span class="faq-item__icon" aria-hidden="true">+</span></button>
+              <button class="faq-item__question" type="button">How can I contact Rana Shahzaib Goods?<span class="faq-item__icon" aria-hidden="true">+</span></button>
               <div class="faq-item__answer"><div class="faq-item__answer-inner">Contact us by <a href="./contact.html">phone, WhatsApp or email</a>, or send your shipment details using the quote enquiry form.</div></div>
             </article>
           </div>
@@ -981,9 +981,9 @@ pages = {
     </main>''',
     },
     'privacy-policy.html': {
-        'title': 'Privacy Notice | Rana Shazaib Goods',
+        'title': 'Privacy Notice | Rana Shahzaib Goods',
         'description': 'Learn how a quote enquiry is prepared for WhatsApp and what happens to the shipment details you provide.',
-        'og_title': 'Privacy Notice | Rana Shazaib Goods',
+        'og_title': 'Privacy Notice | Rana Shahzaib Goods',
         'og_desc': 'How shipment enquiry details are handled when you request a quote.',
         'robots': '<meta name="robots" content="noindex, follow" />',
         'extra_head': '',
@@ -1012,16 +1012,16 @@ pages = {
           <h2>WhatsApp and service providers</h2>
           <p>WhatsApp is a separate service operated by Meta. If you send your enquiry there, its use of your information is governed by WhatsApp's own terms and privacy information. The website is static and has no enquiry database or account system. The hosting provider may process technical request data under its own policies.</p>
           <h2>Contact us</h2>
-          <p>For a question about an enquiry you sent, contact Rana Shazaib Goods at <a href="mailto:ahmadali22561@gmail.com" data-email-link>ahmadali22561@gmail.com</a> or <a href="tel:+923267813992" data-phone-link><span data-phone>03267813992</span></a>.</p>
+          <p>For a question about an enquiry you sent, contact Rana Shahzaib Goods at <a href="mailto:ahmadali22561@gmail.com" data-email-link>ahmadali22561@gmail.com</a> or <a href="tel:+923267813992" data-phone-link><span data-phone>03267813992</span></a>.</p>
           <p>This notice describes the current website behaviour. The business owner should review it for applicable legal requirements and confirm the hosting provider's data practices before launch.</p>
         </div>
       </section>
     </main>''',
     },
     'terms-conditions.html': {
-        'title': 'Service Terms | Rana Shazaib Goods',
+        'title': 'Service Terms | Rana Shahzaib Goods',
         'description': 'Understand how quote requests, availability checks and shipment confirmations work.',
-        'og_title': 'Service Terms | Rana Shazaib Goods',
+        'og_title': 'Service Terms | Rana Shahzaib Goods',
         'og_desc': 'How quote requests, availability checks and shipment confirmations work.',
         'robots': '<meta name="robots" content="noindex, follow" />',
         'extra_head': '',

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Cargo Transport from Karachi | Rana Shazaib Goods',
+  title: 'Cargo Transport from Karachi | Rana Shahzaib Goods',
   description:
     'Arrange cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to discuss availability and request a quote.',
   alternates: { canonical: '/' },
@@ -163,7 +163,7 @@ export default function HomePage() {
             <p className="eyebrow">Who we are</p>
             <h2>Professional cargo support for businesses and consignments.</h2>
             <p>
-              Rana Shazaib Goods handles goods-transport enquiries originating in Karachi for Faisalabad, Lahore and Sialkot. Each request starts with the actual shipment information and a direct discussion about route availability.
+              Rana Shahzaib Goods handles goods-transport enquiries originating in Karachi for Faisalabad, Lahore and Sialkot. Each request starts with the actual shipment information and a direct discussion about route availability.
             </p>
             <p>
               Share the cargo type, approximate weight and delivery requirements. The team can then review the details and discuss a quote before you decide whether to book.

@@ -5,18 +5,18 @@ import { SiteFooter } from '@/components/site-footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Rana Shazaib Goods | Cargo Transport from Karachi',
-    template: '%s | Rana Shazaib Goods',
+    default: 'Rana Shahzaib Goods | Cargo Transport from Karachi',
+    template: '%s | Rana Shahzaib Goods',
   },
   description:
     'Cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to request a clear quote.',
   metadataBase: new URL('https://rana-shazaib-goods-website.vercel.app'),
-  applicationName: 'Rana Shazaib Goods',
+  applicationName: 'Rana Shahzaib Goods',
   openGraph: {
     type: 'website',
     locale: 'en_PK',
-    siteName: 'Rana Shazaib Goods',
-    title: 'Rana Shazaib Goods | Cargo Transport from Karachi',
+    siteName: 'Rana Shahzaib Goods',
+    title: 'Rana Shahzaib Goods | Cargo Transport from Karachi',
     description:
       'Cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to request a clear quote.',
     url: 'https://rana-shazaib-goods-website.vercel.app/',
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
         url: '/images/social-share.jpg',
         width: 1200,
         height: 630,
-        alt: 'Rana Shazaib Goods cargo transport from Karachi',
+        alt: 'Rana Shahzaib Goods cargo transport from Karachi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rana Shazaib Goods | Cargo Transport from Karachi',
+    title: 'Rana Shahzaib Goods | Cargo Transport from Karachi',
     description:
       'Cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Request a quote for your shipment.',
     images: ['/images/social-share.jpg'],

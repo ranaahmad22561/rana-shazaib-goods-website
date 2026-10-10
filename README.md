@@ -1,4 +1,4 @@
-# Rana Shazaib Goods
+# Rana Shahzaib Goods
 
 Next.js website for cargo and goods transport enquiries from Karachi to Faisalabad, Lahore and Sialkot.
 

@@ -6,10 +6,10 @@ export function SiteFooter() {
     <footer className="footer">
       <div className="footer__inner">
         <div>
-          <Link className="brand" href="/" prefetch={false} aria-label="Rana Shazaib Goods home">
-            <img className="brand__logo" src="/images/logo.svg" alt="Rana Shazaib Goods logo" />
+          <Link className="brand" href="/" prefetch={false} aria-label="Rana Shahzaib Goods home">
+            <img className="brand__logo" src="/images/logo.svg" alt="Rana Shahzaib Goods logo" />
             <span className="brand__text">
-              Rana Shazaib <strong>Goods</strong>
+              Rana Shahzaib <strong>Goods</strong>
             </span>
           </Link>
           <p style={{ marginTop: '18px' }}>Cargo and goods transportation services from Karachi toward Faisalabad, Lahore and Sialkot.</p>
@@ -53,7 +53,7 @@ export function SiteFooter() {
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
           <span>
-            © <span>{new Date().getFullYear()}</span> Rana Shazaib Goods. All Rights Reserved.
+            © <span>{new Date().getFullYear()}</span> Rana Shahzaib Goods. All Rights Reserved.
           </span>
           <div className="footer__bottom-links">
             <Link href="/privacy-policy">Privacy Policy</Link>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Rana Shazaib Goods and cargo enquiries from Karachi to Faisalabad, Lahore and Sialkot.',
+  description: 'Learn about Rana Shahzaib Goods and cargo enquiries from Karachi to Faisalabad, Lahore and Sialkot.',
   alternates: { canonical: '/about' },
 };
 
@@ -13,9 +13,9 @@ export default function AboutPage() {
         <div className="page-hero__inner">
           <div className="page-hero__content">
             <span className="page-hero__crumb">About</span>
-            <h1>About Rana Shazaib Goods</h1>
+            <h1>About Rana Shahzaib Goods</h1>
             <p>
-              Rana Shazaib Goods helps customers discuss cargo and goods movement from Karachi, with clear
+              Rana Shahzaib Goods helps customers discuss cargo and goods movement from Karachi, with clear
               shipment information and direct communication about route availability.
             </p>
           </div>
