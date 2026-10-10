@@ -53,7 +53,7 @@ export function PromoVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const elapsedRef = useRef(0);
   const previousTimeRef = useRef(0);
-  const failedAttemptsRef = useRef(0);
+  const failedClipsRef = useRef<Set<number>>(new Set());
 
   const [clipIndex, setClipIndex] = useState(0);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
@@ -65,7 +65,7 @@ export function PromoVideo() {
   const startOver = useCallback(() => {
     elapsedRef.current = 0;
     previousTimeRef.current = 0;
-    failedAttemptsRef.current = 0;
+    failedClipsRef.current.clear();
     setElapsedSeconds(0);
     setClipIndex(0);
     setIsFinished(false);
@@ -110,6 +110,14 @@ export function PromoVideo() {
     setElapsedSeconds(elapsed);
   };
 
+  const findNextPlayableClip = (currentIndex: number): number | null => {
+    for (let offset = 1; offset <= clips.length; offset += 1) {
+      const candidate = (currentIndex + offset) % clips.length;
+      if (!failedClipsRef.current.has(candidate)) return candidate;
+    }
+    return null;
+  };
+
   const handleClipEnded = () => {
     previousTimeRef.current = 0;
     if (elapsedRef.current >= REEL_LIMIT_SECONDS) {
@@ -118,22 +126,37 @@ export function PromoVideo() {
       setIsFinished(true);
       return;
     }
-    setClipIndex((current) => (current + 1) % clips.length);
+
+    // If almost all sources fail, show a clear fallback instead of silently
+    // repeating the single working seven-second clip for the whole minute.
+    if (failedClipsRef.current.size >= clips.length - 1) {
+      setIsPlaying(false);
+      setHasError(true);
+      return;
+    }
+
+    const nextClip = findNextPlayableClip(clipIndex);
+    if (nextClip === null) {
+      setIsPlaying(false);
+      setHasError(true);
+      return;
+    }
+    setClipIndex(nextClip);
   };
 
   const handleClipError = () => {
-    failedAttemptsRef.current += 1;
-    if (failedAttemptsRef.current >= clips.length) {
+    failedClipsRef.current.add(clipIndex);
+    const nextClip = findNextPlayableClip(clipIndex);
+    if (nextClip === null) {
       setIsPlaying(false);
       setHasError(true);
       return;
     }
     previousTimeRef.current = 0;
-    setClipIndex((current) => (current + 1) % clips.length);
+    setClipIndex(nextClip);
   };
 
   const handleCanPlay = () => {
-    failedAttemptsRef.current = 0;
     previousTimeRef.current = 0;
   };
 
