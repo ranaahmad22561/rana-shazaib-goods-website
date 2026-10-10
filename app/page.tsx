@@ -179,27 +179,27 @@ export default function HomePage() {
           <div className="design-services__cards">
             <article className="design-service-card">
               <span className="design-service-card__icon" aria-hidden="true">▣</span>
-              <div><h3>Container Cargo Service</h3><p>Safe and efficient container transport across Pakistan.</p></div>
+              <div><h3>General Goods Transport</h3><p>Movement for standard commercial items and regular goods shipments from Karachi.</p></div>
             </article>
             <article className="design-service-card">
               <span className="design-service-card__icon" aria-hidden="true">▰</span>
-              <div><h3>Road Transport Service</h3><p>Dedicated trucks for goods and commercial cargo needs.</p></div>
+              <div><h3>Larger Shipments</h3><p>Share the load size and any special handling needs so availability can be checked before you book.</p></div>
             </article>
             <article className="design-service-card">
               <span className="design-service-card__icon" aria-hidden="true">⬡</span>
-              <div><h3>Intercity Goods Transport</h3><p>Connecting major cities with route-specific planning.</p></div>
+              <div><h3>Karachi to Faisalabad</h3><p>Goods movement planning for shipments heading to Faisalabad with clear route details.</p></div>
             </article>
             <article className="design-service-card">
               <span className="design-service-card__icon" aria-hidden="true">✓</span>
-              <div><h3>Goods Transport Across Pakistan</h3><p>Tell us your destination and shipment details to discuss availability.</p></div>
+              <div><h3>Karachi to Lahore</h3><p>Reliable route support for cargo requests headed to Lahore and surrounding business needs.</p></div>
             </article>
             <article className="design-service-card">
               <span className="design-service-card__icon" aria-hidden="true">⌖</span>
-              <div><h3>Karachi to Faisalabad</h3><p>Goods movement planning for shipments headed to Faisalabad.</p></div>
+              <div><h3>Karachi to Sialkot</h3><p>Support for cargo movement to Sialkot with practical planning for goods and load details.</p></div>
             </article>
             <article className="design-service-card">
               <span className="design-service-card__icon" aria-hidden="true">✉</span>
-              <div><h3>Fast Quote Request</h3><p>Share cargo type, weight and package details before booking.</p></div>
+              <div><h3>Fast Quote Request</h3><p>Send your cargo requirement and route information through the WhatsApp enquiry system.</p></div>
             </article>
           </div>
         </div>
