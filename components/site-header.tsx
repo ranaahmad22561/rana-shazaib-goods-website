@@ -7,9 +7,9 @@ import { siteConfig } from '@/lib/site';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
   { href: '/routes', label: 'Routes' },
+  { href: '/about', label: 'About' },
   { href: '/faqs', label: 'FAQs' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -38,13 +38,11 @@ export function SiteHeader() {
       <div className="site-topbar">
         <div className="site-topbar__inner container">
           <div className="site-topbar__links">
-            <span>Cargo &amp; Goods Transportation</span>
-            <span>Karachi → Faisalabad | Lahore | Sialkot</span>
+            <a href={`tel:+92${siteConfig.phone.replace(/^0/, '')}`} aria-label="Call Rana Shahzaib Goods">☎ <strong>{siteConfig.phone}</strong></a>
+            <a href={`mailto:${siteConfig.email}`}>✉ {siteConfig.email}</a>
           </div>
           <div className="site-topbar__meta">
-            <a href={`tel:+92${siteConfig.phone.replace(/^0/, '')}`}>
-              Call: <strong>{siteConfig.phone}</strong>
-            </a>
+            <span>⌖ Karachi, Pakistan</span>
             <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>

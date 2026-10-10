@@ -70,11 +70,11 @@ export default function HomePage() {
           <div className="hero__content">
             <p className="hero__trust-pill"><span aria-hidden="true">✓</span> Reliable · Safe · On Time</p>
             <h1 className="hero__title">
-              Goods Transport <span>Services</span>
+              Rana Shahzaib <span>Goods</span>
             </h1>
-            <p className="hero__route-title">From Karachi to Faisalabad, Lahore and Sialkot</p>
+            <p className="hero__route-title">Your Trusted Cargo Partner from Karachi to Faisalabad and Beyond</p>
             <p>
-              Send us your goods type, estimated weight and delivery details to discuss route availability and request a clear transport quote.
+              We provide safe, reliable and affordable cargo transport services for business and personal needs across Pakistan.
             </p>
             <div className="hero__actions">
               <Link className="btn btn--primary" href="/quote">Get a Free Quote <span aria-hidden="true">→</span></Link>
@@ -157,7 +157,84 @@ export default function HomePage() {
         </div>
       </div>
 
-      <section className="section">
+      
+      <section className="section design-services" aria-labelledby="design-services-title">
+        <div className="container design-services__layout">
+          <div className="design-services__intro">
+            <img
+              className="design-services__image"
+              src="/images/container-truck.jpg"
+              alt="Container truck transporting goods on a highway"
+              loading="lazy"
+            />
+            <div className="design-services__copy">
+              <p className="eyebrow">Our services</p>
+              <h2 id="design-services-title">Reliable Transport Solutions</h2>
+              <p>
+                We offer practical goods transport support for business shipments, container cargo and intercity routes.
+              </p>
+              <Link href="/services" className="btn btn--primary">Explore Our Services <span aria-hidden="true">→</span></Link>
+            </div>
+          </div>
+          <div className="design-services__cards">
+            <article className="design-service-card">
+              <span className="design-service-card__icon" aria-hidden="true">▣</span>
+              <div><h3>Container Cargo Service</h3><p>Safe and efficient container transport across Pakistan.</p></div>
+            </article>
+            <article className="design-service-card">
+              <span className="design-service-card__icon" aria-hidden="true">▰</span>
+              <div><h3>Road Transport Service</h3><p>Dedicated trucks for goods and commercial cargo needs.</p></div>
+            </article>
+            <article className="design-service-card">
+              <span className="design-service-card__icon" aria-hidden="true">⬡</span>
+              <div><h3>Intercity Goods Transport</h3><p>Connecting major cities with route-specific planning.</p></div>
+            </article>
+            <article className="design-service-card">
+              <span className="design-service-card__icon" aria-hidden="true">✓</span>
+              <div><h3>Goods Transport Across Pakistan</h3><p>Tell us your destination and shipment details to discuss availability.</p></div>
+            </article>
+            <article className="design-service-card">
+              <span className="design-service-card__icon" aria-hidden="true">⌖</span>
+              <div><h3>Karachi to Faisalabad</h3><p>Goods movement planning for shipments headed to Faisalabad.</p></div>
+            </article>
+            <article className="design-service-card">
+              <span className="design-service-card__icon" aria-hidden="true">✉</span>
+              <div><h3>Fast Quote Request</h3><p>Share cargo type, weight and package details before booking.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--compact design-routes" aria-labelledby="design-routes-title">
+        <div className="container">
+          <div className="design-routes__heading">
+            <div>
+              <p className="eyebrow">Popular routes</p>
+              <h2 id="design-routes-title">Our Key Transport Routes</h2>
+              <p>We specialize in goods transport from Karachi to major cities across Pakistan.</p>
+            </div>
+            <Link href="/routes" className="btn btn--outline">View All Routes <span aria-hidden="true">→</span></Link>
+          </div>
+          <div className="design-routes__grid">
+            {siteConfig.destinations.map((city, index) => (
+              <Link href="/routes" className="design-route-card" key={city}>
+                <img
+                  src="/images/container-truck.jpg"
+                  alt={`Container truck transport route from Karachi to ${city}`}
+                  loading="lazy"
+                  className={`design-route-card__image design-route-card__image--${index + 1}`}
+                />
+                <span className="design-route-card__copy">
+                  <strong>Karachi → {city}</strong>
+                  <small>{index === 0 ? 'Route details · Quote on request' : index === 1 ? 'Goods transport · Quote on request' : 'Shipment planning · Quote on request'}</small>
+                </span>
+                <span className="design-route-card__arrow" aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+<section className="section">
         <div className="container two-col">
           <div>
             <p className="eyebrow">Who we are</p>
@@ -216,55 +293,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="section-header">
-            <p className="eyebrow">Our services</p>
-            <h2>Reliable Transport Solutions</h2>
-            <p>Goods transport support for business shipments, container cargo and intercity routes.</p>
-          </div>
-          <div className="card-grid">
-            <article className="service-card">
-              <div className="service-card__icon">📦</div>
-              <h3>General Goods Transport</h3>
-              <p>Movement for standard commercial items and regular goods shipments from Karachi.</p>
-              <Link href="/services" className="btn btn--outline">Learn More</Link>
-            </article>
-            <article className="service-card">
-              <div className="service-card__icon">🚛</div>
-              <h3>Larger Shipments</h3>
-              <p>Share the load size and any special handling needs so availability can be checked before you book.</p>
-              <Link href="/services" className="btn btn--outline">Learn More</Link>
-            </article>
-            <article className="service-card">
-              <div className="service-card__icon">📍</div>
-              <h3>Karachi to Faisalabad</h3>
-              <p>Goods movement planning for shipments heading to Faisalabad with clear route details.</p>
-              <Link href="/routes" className="btn btn--outline">View Route</Link>
-            </article>
-            <article className="service-card">
-              <div className="service-card__icon">🛣️</div>
-              <h3>Karachi to Lahore</h3>
-              <p>Reliable route support for cargo requests headed to Lahore and surrounding business needs.</p>
-              <Link href="/routes" className="btn btn--outline">View Route</Link>
-            </article>
-            <article className="service-card">
-              <div className="service-card__icon">🏙️</div>
-              <h3>Karachi to Sialkot</h3>
-              <p>Support for cargo movement to Sialkot with practical planning for goods and load details.</p>
-              <Link href="/routes" className="btn btn--outline">View Route</Link>
-            </article>
-            <article className="service-card">
-              <div className="service-card__icon">✉️</div>
-              <h3>Fast Quote Request</h3>
-              <p>Send your cargo requirement and route information through the WhatsApp enquiry system.</p>
-              <Link href="/quote" className="btn btn--primary">Get a Quote</Link>
-            </article>
-          </div>
-        </div>
-      </section>
-
-
       <section className="section section--compact" aria-labelledby="why-choose-us-title">
         <div className="container">
           <div className="section-header">
@@ -318,32 +346,6 @@ export default function HomePage() {
                 Route availability, charges, timing and final booking are confirmed with you directly. A quote request alone does not confirm a shipment.
               </p>
             </aside>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section--compact">
-        <div className="container">
-          <div className="route-banner">
-            <p className="eyebrow">Most requested routes</p>
-            <h2>Choose your destination from Karachi.</h2>
-            <div className="route-map">
-              <div className="city">
-                <span className="city-dot" />
-                <strong>Karachi</strong>
-                <small>Goods collected</small>
-              </div>
-              <div className="map-line" />
-              <div className="city city-end">
-                <span className="city-dot" />
-                <strong>Faisalabad</strong>
-                <small>Goods delivered</small>
-              </div>
-            </div>
-            <div className="route-cta-row">
-              <Link href="/routes" className="btn btn--primary">View All Routes</Link>
-              <Link href="/quote" className="btn btn--outline">Request Shipment Quote</Link>
-            </div>
           </div>
         </div>
       </section>
