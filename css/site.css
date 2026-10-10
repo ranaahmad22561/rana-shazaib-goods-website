@@ -1487,3 +1487,47 @@ ul { color: var(--ink-soft); }
   .stat-card { align-items: center; gap: 7px; padding: 9px 5px; }
   .stat-card__text { font-size: .71rem; }
 }
+
+
+/* Apply the approved blue-and-white Design 1 visual language across every inner page. */
+.page-hero {
+  background:
+    linear-gradient(90deg, rgba(244, 250, 255, .98) 0%, rgba(244, 250, 255, .94) 42%, rgba(239, 248, 255, .73) 70%, rgba(18, 59, 101, .16) 100%),
+    url("/images/container-truck.jpg") right center / cover no-repeat,
+    linear-gradient(120deg, #ffffff, #eaf7fd);
+  color: var(--ink);
+  border-bottom: 1px solid #dceaf3;
+}
+.page-hero::after {
+  border-color: rgba(18, 59, 101, .10);
+  box-shadow: 0 0 0 56px rgba(18, 59, 101, .018), 0 0 0 112px rgba(18, 59, 101, .012);
+}
+.page-hero__inner { padding: 60px 0 64px; }
+.page-hero__content h1 {
+  color: #123456;
+  text-shadow: 0 1px 0 rgba(255,255,255,.25);
+}
+.page-hero__content p { color: #405b73; }
+.page-hero__crumb {
+  border: 1px solid #c4e7fa;
+  background: rgba(224, 244, 255, .95);
+  color: #0869d4;
+}
+.page-hero__meta strong { color: #123b65; }
+
+@media (max-width: 760px) {
+  .page-hero {
+    background:
+      linear-gradient(90deg, rgba(244,250,255,.97), rgba(244,250,255,.91)),
+      url("/images/container-truck.jpg") center / cover no-repeat,
+      linear-gradient(120deg, #ffffff, #eaf7fd);
+  }
+  .page-hero__inner { padding: 42px 0 45px; }
+  .page-hero__crumb { margin-bottom: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card, .feature-card, .process-card, .route-card, .btn {
+    transition: none !important;
+  }
+}
