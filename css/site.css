@@ -1038,3 +1038,132 @@ ul { color: var(--ink-soft); }
   .footer__inner { grid-template-columns: minmax(0,1fr); }
   .footer__inner > div:first-child { grid-column: auto; }
 }
+
+
+/* Cargo promo video — branded, accessible and responsive. */
+.promo-film {
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5fbff 0%, #ffffff 54%, #edf7fd 100%);
+  border-top: 1px solid #e0edf6;
+  border-bottom: 1px solid #e0edf6;
+}
+.promo-film__layout {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+}
+.promo-film__content h2 {
+  max-width: 580px;
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+.promo-film__content > p:not(.eyebrow) {
+  max-width: 560px;
+  color: #536d82;
+  font-size: .98rem;
+  line-height: 1.72;
+}
+.promo-film__points {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 25px;
+}
+.promo-film__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.promo-film__point > span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  border: 1px solid #d7edfb;
+  border-radius: 11px;
+  background: #eaf7ff;
+  color: #0870c8;
+  font-weight: 900;
+}
+.promo-film__point div { display: grid; gap: 3px; }
+.promo-film__point strong { color: #123b65; font-size: .92rem; line-height: 1.35; }
+.promo-film__point small { color: #63798d; font-size: .82rem; line-height: 1.5; }
+.promo-film__media {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7e8f5;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(18,59,101,.15);
+}
+.promo-film__media-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 17px;
+  background: #fff;
+  color: #123b65;
+  font-size: .8rem;
+  font-weight: 800;
+}
+.promo-film__live-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  box-shadow: 0 0 0 4px #e2f5ff;
+}
+.promo-film__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #092746;
+  object-fit: cover;
+}
+.promo-film__media-caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 8px;
+  padding: 14px 13px;
+  background: #0e365e;
+  color: #fff;
+}
+.promo-film__media-caption span {
+  font-size: .69rem;
+  font-weight: 850;
+  letter-spacing: .09em;
+}
+.promo-film__credit {
+  margin: 0;
+  padding: 10px 14px 13px;
+  color: #72879a;
+  background: #fff;
+  font-size: .7rem;
+  line-height: 1.45;
+}
+.promo-film__credit a {
+  color: #0869d4;
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media (max-width: 900px) {
+  .promo-film__layout { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .promo-film__content { max-width: 680px; }
+  .promo-film__media { width: 100%; max-width: 850px; justify-self: center; }
+}
+@media (max-width: 560px) {
+  .promo-film { padding-top: 46px; padding-bottom: 46px; }
+  .promo-film__layout { gap: 23px; }
+  .promo-film__content h2 { font-size: clamp(1.9rem, 8vw, 2.45rem); }
+  .promo-film__content > p:not(.eyebrow) { font-size: .94rem; }
+  .promo-film__points { gap: 12px; margin: 18px 0 22px; }
+  .promo-film__media { border-radius: 17px; }
+  .promo-film__media-top { padding: 11px 13px; font-size: .72rem; }
+  .promo-film__media-caption { justify-content: flex-start; gap: 10px 16px; }
+  .promo-film__media-caption span { font-size: .62rem; }
+}

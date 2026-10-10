@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Cargo Transport from Karachi | Rana Shazaib Goods',
+  title: 'Cargo Transport from Karachi | Rana Shahzaib Goods',
   description:
     'Arrange cargo and goods transport from Karachi to Faisalabad, Lahore and Sialkot. Share your shipment details to discuss availability and request a quote.',
   alternates: { canonical: '/' },
@@ -169,7 +169,7 @@ export default function HomePage() {
             <p className="eyebrow">Who we are</p>
             <h2>Professional cargo support for businesses and consignments.</h2>
             <p>
-              Rana Shazaib Goods handles goods-transport enquiries originating in Karachi for Faisalabad, Lahore and Sialkot. Each request starts with the actual shipment information and a direct discussion about route availability.
+              Rana Shahzaib Goods handles goods-transport enquiries originating in Karachi for Faisalabad, Lahore and Sialkot. Each request starts with the actual shipment information and a direct discussion about route availability.
             </p>
             <p>
               Share the cargo type, approximate weight and delivery requirements. The team can then review the details and discuss a quote before you decide whether to book.
@@ -270,7 +270,62 @@ export default function HomePage() {
       </section>
 
 
-      <section className="section section--compact" aria-labelledby="why-choose-us-title">
+      
+      <section className="section promo-film" aria-labelledby="promo-film-title">
+        <div className="container promo-film__layout">
+          <div className="promo-film__content">
+            <p className="eyebrow">Cargo in motion</p>
+            <h2 id="promo-film-title">Careful Loading. Smart Transport. Reliable Delivery.</h2>
+            <p>
+              Every shipment deserves careful handling and a clear plan. See how organized loading and modern cargo movement help goods travel from Karachi towards their destination.
+            </p>
+            <div className="promo-film__points">
+              <div className="promo-film__point">
+                <span aria-hidden="true">✓</span>
+                <div><strong>Careful cargo handling</strong><small>Organized loading and secure preparation.</small></div>
+              </div>
+              <div className="promo-film__point">
+                <span aria-hidden="true">↗</span>
+                <div><strong>Planned route movement</strong><small>Route and shipment details discussed before booking.</small></div>
+              </div>
+              <div className="promo-film__point">
+                <span aria-hidden="true">▣</span>
+                <div><strong>Business-focused service</strong><small>Transport support for different goods and load sizes.</small></div>
+              </div>
+            </div>
+            <Link className="btn btn--primary" href="/quote">Request a Cargo Quote <span aria-hidden="true">→</span></Link>
+          </div>
+          <div className="promo-film__media">
+            <div className="promo-film__media-top">
+              <span className="promo-film__live-dot" aria-hidden="true"></span>
+              <span>Rana Shahzaib Goods · Cargo in Motion</span>
+            </div>
+            <video
+              className="promo-film__video"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/images/container-truck.jpg"
+              aria-label="Illustrative video of freight goods being loaded onto a truck using a forklift"
+            >
+              <source
+                src="https://videos.pexels.com/video-files/9856371/9856371-hd_1920_1080_30fps.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support embedded video.
+              <a href="https://www.pexels.com/video/loading-a-truck-with-construction-products-9856371/" target="_blank" rel="noreferrer">Open the cargo-loading video</a>.
+            </video>
+            <div className="promo-film__media-caption">
+              <span>LOADING</span><span>TRANSPORT</span><span>DELIVERY PLANNING</span>
+            </div>
+            <p className="promo-film__credit">
+              Illustrative stock footage by <a href="https://www.pexels.com/video/loading-a-truck-with-construction-products-9856371/" target="_blank" rel="noreferrer">Amar Preciado on Pexels</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+<section className="section section--compact" aria-labelledby="why-choose-us-title">
         <div className="container">
           <div className="section-header">
             <p className="eyebrow">Why choose us</p>

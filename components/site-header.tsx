@@ -52,10 +52,10 @@ export function SiteHeader() {
 
       <header className="site-header">
         <div className="site-header__inner container">
-          <Link className="brand" href="/" prefetch={false} aria-label="Rana Shazaib Goods home">
-            <img className="brand__logo" src="/images/logo.svg" alt="Rana Shazaib Goods logo" />
+          <Link className="brand" href="/" prefetch={false} aria-label="Rana Shahzaib Goods home">
+            <img className="brand__logo" src="/images/logo.svg" alt="Rana Shahzaib Goods logo" />
             <span className="brand__text">
-              Rana Shazaib <strong>Goods</strong>
+              Rana Shahzaib <strong>Goods</strong>
             </span>
           </Link>
 

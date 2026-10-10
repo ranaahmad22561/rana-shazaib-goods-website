@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Privacy Notice',
-  description: 'How the Rana Shazaib Goods website handles information shared through a cargo enquiry.',
+  description: 'How the Rana Shahzaib Goods website handles information shared through a cargo enquiry.',
   alternates: { canonical: '/privacy-policy' },
 };
 

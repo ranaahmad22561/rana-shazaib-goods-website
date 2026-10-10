@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Contact Rana Shazaib Goods to discuss cargo routes and shipment quote enquiries from Karachi.',
+  description: 'Contact Rana Shahzaib Goods to discuss cargo routes and shipment quote enquiries from Karachi.',
   alternates: { canonical: '/contact' },
 };
 
